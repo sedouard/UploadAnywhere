@@ -75,7 +75,7 @@ namespace Uploader
 
         static void SendFileUploadedMessage(string fileName, string containerName)
         {
-            EtlFileMessage message = new EtlFileMessage()
+            FileUploadedMessage message = new FileUploadedMessage()
             {
                 FileName = fileName,
                 UploadTime = System.DateTime.UtcNow,

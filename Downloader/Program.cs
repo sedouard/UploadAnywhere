@@ -55,7 +55,7 @@ namespace Downloader
                         continue;
                     }
 
-                    EtlFileMessage etlUploadedMessage = JsonConvert.DeserializeObject<EtlFileMessage>(message.GetBody<string>());
+                    FileUploadedMessage etlUploadedMessage = JsonConvert.DeserializeObject<FileUploadedMessage>(message.GetBody<string>());
 
                     Console.WriteLine("Got uploaded file notification for " + etlUploadedMessage.FileName);
 
